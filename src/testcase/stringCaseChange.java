@@ -6,7 +6,8 @@ public class stringCaseChange {
 		// TODO Auto-generated method stub
 
 		String text="SWARNENDU";
-		String modifiedtext="";
+		String modifiedtext="";		
+		
 		
 		int stringlength=text.length();
 		System.out.println(text);
@@ -21,6 +22,8 @@ public class stringCaseChange {
 				String temp=Character.toString(t);
 				modifiedtext=modifiedtext+temp.toUpperCase();
 				//modifiedtext=modifiedtext+temp.toLowerCase();
+				
+				
 			}
 			else{
 				

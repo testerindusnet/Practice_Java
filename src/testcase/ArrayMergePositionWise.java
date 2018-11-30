@@ -1,5 +1,7 @@
 package testcase;
 
+import java.util.Arrays;
+
 public class ArrayMergePositionWise {
 
 	public static void main(String[] args) {
@@ -23,6 +25,11 @@ public class ArrayMergePositionWise {
 			
 			
 		}
+		
+		
+		
+		
+		
 
 	}
 

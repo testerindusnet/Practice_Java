@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class SortingAlgo {
 	
-	static int[] number=new int[]{14,33,10,9,27,35,11};
+	static int[] number=new int[]{14,33,10,9,27,35,11,8};
 
 	public static void main(String[] args) {
 		//SortingAlgo.BubbleSort();
 	    SortingAlgo.SelectionSort();
-		//SortingAlgo.insertionsort();
+	   //SortingAlgo.insertionsort();
 	}	
 	
 	public static void BubbleSort()
@@ -30,7 +30,7 @@ public class SortingAlgo {
 		System.out.println(Arrays.toString(number));		
 	}
 
-		public static void SelectionSort()
+	/*	public static void SelectionSort()
 		{
 		      //int min=0;
 			  for(int i=0;i<(number.length)-1;i++)
@@ -45,12 +45,54 @@ public class SortingAlgo {
 							number[i]=temp;					
 							
 						}				
-					}	
+					}
+					System.out.println(Arrays.toString(number));	
 				 }	
 				
 			System.out.println(Arrays.toString(number));		
 		}
 		
+	*/
+	
+	public static void SelectionSort()
+	{
+	      int min;
+	      int pos=0;
+	      int flag=0;
+		  for(int i=0;i<(number.length)-1;i++)
+			 {	
+			   min=number[i];
+				for(int j=i+1;j<(number.length);j++)
+				{						
+				
+							if(min>number[j])
+							{
+								min=number[j];
+								pos=j;
+								flag=1;
+															
+							}
+					
+				}
+								
+				if(flag==1)
+				{
+					int temp=min;
+					number[pos]=number[i];
+					number[i]=temp;
+					System.out.println(number[i]);
+					System.out.println(Arrays.toString(number));
+					System.out.println("============");
+					pos=0;
+					flag=0;
+				}		
+					
+				
+			 }	
+			
+		System.out.println(Arrays.toString(number));		
+	}
+	
 		
 		
 		public static void insertionsort(){
